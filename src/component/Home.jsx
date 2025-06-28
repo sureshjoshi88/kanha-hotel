@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import { MdNavigateNext } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
+import { memo } from 'react';
+
+//import images
 import hotel from '../images/hotel.jpg'
 import front from '../images/front-img.jpg'
 import room1 from '../images/room1.jpg'
+
 
 
 const Home = () => {
@@ -27,6 +31,9 @@ const images = [
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
+  setTimeout(() => {
+    nextSlide()
+}, 4000);
 
   return (
     <div>
@@ -93,4 +100,4 @@ const images = [
   )
 }
 
-export default Home
+export default memo(Home)
