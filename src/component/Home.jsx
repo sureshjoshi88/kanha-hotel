@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import { MdNavigateNext } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
-
+import hotel from '../images/hotel.jpg'
+import front from '../images/front-img.jpg'
 
 
 const Home = () => {
   
 const images = [
   "https://cf.bstatic.com/xdata/images/hotel/max1024x768/169124334.jpg?k=f7c9caabf8254663949bebfc15302612f6fa37aeecc6ec0715d6648a049311ca&o=&hp=1",
-  "https://source.unsplash.com/random/800x400?sig=2",
-  "https://source.unsplash.com/random/800x400?sig=3",
+  hotel,
+  front,
 ];
 
 
@@ -28,7 +29,6 @@ const images = [
 
   return (
     <div>
-      <p>jai shree ram</p>
        <div className="relative w-full ">
       <div className="overflow-hidden rounded-2xl shadow-lg">
         {images.map((img, index) => (
@@ -38,7 +38,7 @@ const images = [
               index === current ? "opacity-100" : "opacity-0 absolute inset-0"
             }`}
           >
-            <img src={img} alt={`Slide ${index}`} className="w-full h-100 object-cover" />
+            <img src={img} alt={`Slide ${index}`} className="w-full h-110 object-cover" />
           </div>
         ))}
       </div>
