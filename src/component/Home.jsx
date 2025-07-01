@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { MdNavigateNext } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
 import { memo } from 'react';
-
 //import images
 import hotel from '../images/hotel.jpg'
 import front from '../images/front-img.jpg'
@@ -88,14 +87,58 @@ const images = [
     </div>
     <div className='grid md:grid-cols-2 gap-5 mt-5'>
       <div className='p-2'>
-        <p className='font-semibold text-2xl'>Serenity Unleashed</p>
-        <p className='font-semibold text-lg'>Kanha's Cozy Comforts</p>
-        <p>Step into Kanha's Cozy Comforts and experience a haven of tranquility. Our rooms are designed with your ultimate comfort in mind, offering plush furnishings and a serene ambiance. It's more than just a stay – it's a retreat, where every detail is carefully curated for your relaxation. Come, indulge in luxury and make unforgettable memories at Kanha's.</p>
+        <p className='font-semibold text-2xl md:pt-8 pt-2'>Serenity Unleashed</p>
+        <p className='font-semibold text-lg pt-2'>Kanha's Cozy Comforts</p>
+        <p className='pt-2'>Step into Kanha's Cozy Comforts and experience a haven of tranquility. Our rooms are designed with your ultimate comfort in mind, offering plush furnishings and a serene ambiance. It's more than just a stay – it's a retreat, where every detail is carefully curated for your relaxation. Come, indulge in luxury and make unforgettable memories at Kanha's.</p>
       </div>
       <div className='p-2'>
         <img className='h-100  w-full rounded ' src={room1} alt="Rooms" />
       </div>
     </div>
+    <div className='grid md:grid-cols-2 gap-5 mt-5'>
+     
+      <div className='p-2'>
+        <img className='h-100  w-full rounded ' src={room1} alt="Rooms" />
+      </div>
+       <div className='p-2'>
+        <p className='font-semibold text-2xl md:pt-8 pt-2'>Timeless Luxury Retreat</p>
+        <p className='font-semibold text-lg pt-2'>Modern Luxury, Timeless Serenity</p>
+        <p className='pt-2'>Welcome to Kanha Hotel, where the essence of modern luxury meets the enduring charm of timeless serenity. Here, every detail is thoughtfully curated to offer you an experience that transcends the ordinary. Your stay with us promises not just relaxation but a journey into a world where indulgence and tranquility harmoniously coexist.</p>
+      </div>
+    </div>
+    <div className="grid md:grid-cols-2">
+           <div className="relative w-full ">
+      <div className="overflow-hidden rounded-2xl shadow-lg">
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`transition-opacity duration-700 ease-in-out ${
+              index === current ? "opacity-100" : "opacity-0 absolute inset-0"
+            }`}
+          >
+            <img src={img} alt={`Slide ${index}`} className="w-full h-100 object-cover" />
+          </div>
+        ))}
+      </div>
+
+      
+
+      <div className="flex justify-center mt-4 gap-2 pb-4">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`w-3 h-3 rounded-full cursor-pointer ${
+              current === index ? "bg-blue-600" : "bg-gray-300"
+            }`}
+          ></span>
+        ))}
+      </div>
+    </div>
+    </div>
+
+
+
     </div>
   )
 }

@@ -1,9 +1,9 @@
-
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import MainLyout from './component/MainLyout'
 import { lazy, Suspense } from 'react'
 const Home = lazy(()=>import('./component/Home'))
+
 
 
 function App() {
