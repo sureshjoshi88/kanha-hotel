@@ -74,7 +74,7 @@ const images = [
       </button>
 
       {/* Dots */}
-      <div className="flex justify-center mt-4 gap-2">
+      <div className="flex justify-center mt-4 gap-2 pb-4">
         {images.map((_, index) => (
           <span
             key={index}
@@ -86,10 +86,10 @@ const images = [
         ))}
       </div>
     </div>
-    <div className='grid md:grid-cols-2 gap-5'>
+    <div className='grid md:grid-cols-2 gap-5 mt-5'>
       <div className='p-2'>
-        <p>Serenity Unleashed</p>
-        <p>Kanha's Cozy Comforts</p>
+        <p className='font-semibold text-2xl'>Serenity Unleashed</p>
+        <p className='font-semibold text-lg'>Kanha's Cozy Comforts</p>
         <p>Step into Kanha's Cozy Comforts and experience a haven of tranquility. Our rooms are designed with your ultimate comfort in mind, offering plush furnishings and a serene ambiance. It's more than just a stay – it's a retreat, where every detail is carefully curated for your relaxation. Come, indulge in luxury and make unforgettable memories at Kanha's.</p>
       </div>
       <div className='p-2'>
