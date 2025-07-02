@@ -16,6 +16,12 @@ const images = [
   hotel,
   front,
 ];
+const images1 = [
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxBOklOQD4v4QChxo3sUS95NN34zI037jLgA&s",
+  "https://thumbs.dreamstime.com/b/spicy-masala-mutton-fry-indian-food-steamed-rice-butter-chicken-dinner-table-restaurant-style-dinner-non-veg-thali-spicy-masala-202055314.jpg",
+  "https://thumbs.dreamstime.com/b/unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.jpg",
+  "https://media.istockphoto.com/id/1078081328/photo/green-peas-or-matar-paneer-curry-recipe-served-in-a-bowl-selective-focus.jpg?s=612x612&w=0&k=20&c=2zrBYS8skb8jdgk-8HTFqxOUd1HBSC9Mre2DUCPxyXw="
+];
 
 
   const [current, setCurrent] = useState(0);
@@ -107,9 +113,9 @@ const images = [
       </div>
     </div>
     <div className="grid md:grid-cols-2">
-           <div className="relative w-full ">
+    <div className="relative w-full ">
       <div className="overflow-hidden rounded-2xl shadow-lg">
-        {images.map((img, index) => (
+        {images1.map((img, index) => (
           <div
             key={index}
             className={`transition-opacity duration-700 ease-in-out ${
@@ -124,7 +130,7 @@ const images = [
       
 
       <div className="flex justify-center mt-4 gap-2 pb-4">
-        {images.map((_, index) => (
+        {images1.map((_, index) => (
           <span
             key={index}
             onClick={() => setCurrent(index)}
@@ -134,6 +140,11 @@ const images = [
           ></span>
         ))}
       </div>
+    </div>
+    <div>
+      <p>Dine in Elegance</p>
+      <p>Taste the Finest at Kanha Hotel</p>
+      <p>At Kanha Hotel, we redefine dining with a symphony of flavors. Embark on a gastronomic adventure where each dish is a masterpiece, meticulously prepared to tantalize your taste buds. Our chefs blend creativity and tradition, promising a culinary experience that lingers in your memory. Come, 'Taste the Finest,' and let your senses dance at Kanha Hotel's dining oasis. Dining Options</p>
     </div>
     </div>
 
