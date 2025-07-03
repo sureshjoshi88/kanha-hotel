@@ -53,8 +53,8 @@ const images1 = [
           >
             <img src={img} alt={`Slide ${index}`} className="w-full h-100 object-cover" />
              <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center text-white p-4">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2">Welcome To Kanha Hotel</h2>
-              <p className="text-sm md:text-base max-w-md">
+              <h2 className="text-2xl md:text-4xl font-bold mb-2">Welcome To Kanha Hotel</h2>
+              <p className="text-sm md:text-lg max-w-md font-semibold">
                 At Kanha Hotel, we redefine the art of hospitality, offering a world-class experience tailored to your
                 every need. Discover the perfect blend of luxury, comfort, and convenience that awaits you at our doorstep.
               </p>
@@ -112,7 +112,7 @@ const images1 = [
         <p className='pt-2'>Welcome to Kanha Hotel, where the essence of modern luxury meets the enduring charm of timeless serenity. Here, every detail is thoughtfully curated to offer you an experience that transcends the ordinary. Your stay with us promises not just relaxation but a journey into a world where indulgence and tranquility harmoniously coexist.</p>
       </div>
     </div>
-    <div className="grid md:grid-cols-2">
+    <div className="grid md:grid-cols-2 gap-5 mt-5">
     <div className="relative w-full ">
       <div className="overflow-hidden rounded-2xl shadow-lg">
         {images1.map((img, index) => (
@@ -141,7 +141,7 @@ const images1 = [
         ))}
       </div>
     </div>
-    <div>
+    <div className='p-2'>
       <p>Dine in Elegance</p>
       <p>Taste the Finest at Kanha Hotel</p>
       <p>At Kanha Hotel, we redefine dining with a symphony of flavors. Embark on a gastronomic adventure where each dish is a masterpiece, meticulously prepared to tantalize your taste buds. Our chefs blend creativity and tradition, promising a culinary experience that lingers in your memory. Come, 'Taste the Finest,' and let your senses dance at Kanha Hotel's dining oasis. Dining Options</p>
