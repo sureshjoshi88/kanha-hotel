@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 import Navbar from './Navbar'
 import { Outlet } from 'react-router-dom'
+import Foter from './Foter'
 
 const MainLyout = () => {
   return (
@@ -10,6 +11,9 @@ const MainLyout = () => {
       </div>
       <div>
         <Outlet/>
+      </div>
+      <div>
+        <Foter/>
       </div>
     </div>
   )
