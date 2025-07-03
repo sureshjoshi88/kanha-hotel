@@ -2,6 +2,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import MainLyout from './component/MainLyout'
 import { lazy, Suspense } from 'react'
+import Default from './component/Default'
 const Home = lazy(()=>import('./component/Home'))
 
 
@@ -22,6 +23,7 @@ function App() {
           </div>} >
 
  <Routes>
+  <Route path='*' element={<Default/>}/>
   <Route path='/' element={<MainLyout/>}>
   <Route index element={<Home/>}/>
   </Route>
