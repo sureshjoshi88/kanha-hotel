@@ -38,7 +38,7 @@ const images1 = [
 
   setTimeout(() => {
     nextSlide()
-}, 4000);
+}, 6000);
 
   return (
     <div>
@@ -53,8 +53,8 @@ const images1 = [
           >
             <img src={img} alt={`Slide ${index}`} className="w-full h-100 object-cover" />
              <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center text-white p-4">
-              <h2 className="text-2xl md:text-4xl font-bold mb-2">Welcome To Kanha Hotel</h2>
-              <p className="text-sm md:text-lg max-w-md font-semibold">
+              <h2 className="text-xl md:text-5xl font-bold mb-2">Welcome To Kanha Hotel</h2>
+              <p className="text-sm md:text-2xl max-w-md font-medium">
                 At Kanha Hotel, we redefine the art of hospitality, offering a world-class experience tailored to your
                 every need. Discover the perfect blend of luxury, comfort, and convenience that awaits you at our doorstep.
               </p>
@@ -66,14 +66,14 @@ const images1 = [
       {/* Prev/Next buttons */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-2xl bg-gray-200 p-2 rounded-full shadow hover:bg-gray-300"
+        className="absolute top-1/2 sm:hidden  md:block left-4 transform -translate-y-1/2 text-2xl bg-gray-200 p-2 rounded-full shadow hover:bg-gray-300"
       >
         <IoIosArrowBack />
 
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-2xl bg-gray-200 p-2 rounded-full shadow hover:bg-gray-300"
+        className="absolute top-1/2 sm:hidden right-4 transform -translate-y-1/2 text-2xl bg-gray-200 p-2 rounded-full shadow hover:bg-gray-300"
       >
         <MdNavigateNext />
       </button>
