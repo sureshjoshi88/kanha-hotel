@@ -11,25 +11,25 @@ const Foter = () => {
           <div>
             <h3 className="text-lg font-semibold mb-2">Rooms &amp; Suites</h3>
             <ul className="space-y-1 text-sm text-gray-300">
-              <li>Modern Luxury Rooms</li>
-              <li>Best Cozy Comfort Rooms</li>
-              <li>Deluxe Rooms</li>
-              <li>Deluxe Suites</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>Modern Luxury Rooms</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>Best Cozy Comfort Rooms</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>Deluxe Rooms</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>Deluxe Suites</li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">Features</h3>
             <ul className="space-y-1 text-sm text-gray-300">
-              <li>Dining</li>
-              <li>Gallery</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>Dining</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>Gallery</li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">More</h3>
             <ul className="space-y-1 text-sm text-gray-300">
-              <li>Blog</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>Blog</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>About</li>
+              <li className='cursor-pointer hover:border-b-2 w-fit'>Contact</li>
             </ul>
           </div>
         </div>
