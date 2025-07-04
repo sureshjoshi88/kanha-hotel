@@ -66,14 +66,14 @@ const images1 = [
       {/* Prev/Next buttons */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 sm:hidden  md:block left-4 transform -translate-y-1/2 text-2xl bg-gray-200 p-2 rounded-full shadow hover:bg-gray-300"
+        className="absolute top-1/2 hidden  md:block left-4 transform -translate-y-1/2 text-2xl bg-gray-200 p-2 rounded-full shadow hover:bg-gray-300"
       >
         <IoIosArrowBack />
 
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 sm:hidden right-4 transform -translate-y-1/2 text-2xl bg-gray-200 p-2 rounded-full shadow hover:bg-gray-300"
+        className="absolute top-1/2 hidden md:block right-4 transform -translate-y-1/2 text-2xl bg-gray-200 p-2 rounded-full shadow hover:bg-gray-300"
       >
         <MdNavigateNext />
       </button>

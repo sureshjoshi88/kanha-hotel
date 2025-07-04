@@ -6,15 +6,15 @@ import Foter from './Foter'
 const MainLyout = () => {
   return (
     <div>
-      <div>
+      <header>
         <Navbar/>
-      </div>
-      <div>
+      </header>
+      <main>
         <Outlet/>
-      </div>
-      <div>
+      </main>
+      <footer>
         <Foter/>
-      </div>
+      </footer>
     </div>
   )
 }
