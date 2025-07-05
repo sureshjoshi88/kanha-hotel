@@ -2,7 +2,7 @@ export const hotelRooms = [
   {
     id: 1,
     title: "Deluxe Ocean View Room",
-    image: "https://source.unsplash.com/800x600/?hotel,deluxe,sea",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
     description: "Spacious room with a stunning ocean view and modern luxury amenities.",
     pricePerNight: 4500,
     type: "Deluxe Room",
@@ -10,7 +10,7 @@ export const hotelRooms = [
   {
     id: 2,
     title: "Deluxe Garden View Room",
-    image: "https://source.unsplash.com/800x600/?hotel,garden,room",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
     description: "Comfortable deluxe room overlooking lush green gardens.",
     pricePerNight: 4200,
     type: "Deluxe Room",
@@ -18,7 +18,7 @@ export const hotelRooms = [
   {
     id: 3,
     title: "Deluxe Poolside Room",
-    image: "https://source.unsplash.com/800x600/?hotel,pool,room",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
     description: "Enjoy the pool view and private balcony in this deluxe stay.",
     pricePerNight: 5000,
     type: "Deluxe Room",
@@ -26,7 +26,7 @@ export const hotelRooms = [
   {
     id: 4,
     title: "Deluxe Mountain View Room",
-    image: "https://source.unsplash.com/800x600/?hotel,mountain,room",
+    image: "https://images.unsplash.com/photo-1582719478181-ef2fd8c1f3bd",
     description: "Peaceful room with a scenic view of the mountains.",
     pricePerNight: 4600,
     type: "Deluxe Room",
@@ -34,7 +34,7 @@ export const hotelRooms = [
   {
     id: 5,
     title: "Deluxe Suite Room",
-    image: "https://source.unsplash.com/800x600/?hotel,deluxe,suite",
+    image: "https://images.unsplash.com/photo-1590490360182-bfd1ae4db57a",
     description: "Elegant suite with living space and king-sized bed.",
     pricePerNight: 6000,
     type: "Deluxe Room",
@@ -42,7 +42,7 @@ export const hotelRooms = [
   {
     id: 6,
     title: "Deluxe Lake View Room",
-    image: "https://source.unsplash.com/800x600/?hotel,lake,room",
+    image: "https://images.unsplash.com/photo-1604147706288-7accc225ad9e",
     description: "Relax with a lake view from your deluxe room window.",
     pricePerNight: 4800,
     type: "Deluxe Room",
@@ -50,7 +50,7 @@ export const hotelRooms = [
   {
     id: 7,
     title: "Deluxe City View Room",
-    image: "https://source.unsplash.com/800x600/?hotel,city,room",
+    image: "https://images.unsplash.com/photo-1559599238-5e4e40f0fbc9",
     description: "Modern room with beautiful night city lights view.",
     pricePerNight: 4700,
     type: "Deluxe Room",
@@ -58,7 +58,7 @@ export const hotelRooms = [
   {
     id: 8,
     title: "Deluxe Romantic Room",
-    image: "https://source.unsplash.com/800x600/?hotel,romantic,room",
+    image: "https://images.unsplash.com/photo-1600585152926-602cbf9c3ba2",
     description: "Perfect for couples with mood lighting and cozy vibes.",
     pricePerNight: 4900,
     type: "Deluxe Room",
@@ -66,7 +66,7 @@ export const hotelRooms = [
   {
     id: 9,
     title: "Deluxe Heritage Room",
-    image: "https://source.unsplash.com/800x600/?hotel,heritage,room",
+    image: "https://images.unsplash.com/photo-1590490360182-bfd1ae4db57a",
     description: "Royal room with traditional decor and antique furniture.",
     pricePerNight: 5300,
     type: "Deluxe Room",
@@ -74,7 +74,7 @@ export const hotelRooms = [
   {
     id: 10,
     title: "Deluxe Business Room",
-    image: "https://source.unsplash.com/800x600/?hotel,business,room",
+    image: "https://images.unsplash.com/photo-1582719478197-1a9c1f66f33e",
     description: "Comfortable work desk and high-speed Wi-Fi for business travelers.",
     pricePerNight: 4400,
     type: "Deluxe Room",

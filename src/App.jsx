@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import MainLyout from './component/MainLyout'
 import { lazy, Suspense } from 'react'
 import Default from './component/Default'
+import DeluxRoom from './component/DeluxRoom'
 const Home = lazy(()=>import('./component/Home'))
 
 
@@ -26,6 +27,7 @@ function App() {
   <Route path='*' element={<Default/>}/>
   <Route path='/' element={<MainLyout/>}>
   <Route index element={<Home/>}/>
+  <Route path='/deluxroom' element={<DeluxRoom/>}/>
   </Route>
  </Routes>
 </Suspense>
