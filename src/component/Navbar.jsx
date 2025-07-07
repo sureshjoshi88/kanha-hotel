@@ -3,10 +3,24 @@ import { NavLink } from 'react-router-dom';
 import logo from '../images/logo.jpeg';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { memo } from 'react';
+import { useTheme } from '../themeContext/UseTheme';
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme,setTheme} = useTheme()
+  const hanldeTheme = ()=>{
+    if(theme==='light'){
+      document.body.style.backgroundColor = "black"
+      document.body.style.color = "white"
+      setTheme('dark')
+    }else{
+      document.body.style.backgroundColor = "white"
+      document.body.style.color = "black"
+      setTheme('light')
+
+    }
+  }
 
   // Active link style
   const navClass = ({ isActive }) =>
@@ -75,6 +89,8 @@ const Navbar = () => {
         <NavLink to="/blog" className={navClass}>Blog</NavLink>
         <NavLink to="/about" className={navClass}>About</NavLink>
         <NavLink to="/contact" className={navClass}>Contact</NavLink>
+                <div><button onClick={hanldeTheme} className='border p-2'>theme</button></div>
+
       </div>
 
       {/* Mobile Slide Menu */}
