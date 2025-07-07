@@ -2,9 +2,9 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import MainLyout from './component/MainLyout'
 import { lazy, Suspense } from 'react'
-import Default from './component/Default'
-import DeluxRoom from './component/DeluxRoom'
-const Home = lazy(()=>import('./component/Home'))
+const Home = lazy(()=>import('./pages/Home'))
+const DeluxRoom = lazy(()=>import('./pages/DeluxRoom'))
+const Default = lazy(()=>import('./pages/Default'))
 
 
 
