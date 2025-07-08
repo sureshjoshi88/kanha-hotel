@@ -4,17 +4,21 @@ import logo from '../images/logo.jpeg';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { memo } from 'react';
 import { useTheme } from '../themeContext/UseTheme';
+import { FaMoon } from "react-icons/fa6";
+import { IoSunny } from "react-icons/io5";
+
+
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme,setTheme} = useTheme()
-  const hanldeTheme = ()=>{
-    if(theme==='light'){
+  const { theme, setTheme } = useTheme()
+  const hanldeTheme = () => {
+    if (theme === 'light') {
       document.body.style.backgroundColor = "black"
       document.body.style.color = "white"
       setTheme('dark')
-    }else{
+    } else {
       document.body.style.backgroundColor = "white"
       document.body.style.color = "black"
       setTheme('light')
@@ -31,12 +35,12 @@ const Navbar = () => {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
-    <div className="w-full bg-white shadow-md relative">
+    <div className="w-full  shadow-md relative">
       {/* Top Section */}
       <div className="flex items-center justify-between px-4 md:px-10 py-2">
         {/* Logo */}
         <NavLink to="/">
-          <img src={logo} alt="Logo" className="w-10 md:h-16 md:w-16 rounded" />
+          <img src={logo} alt="Logo" className="w-10 md:h-16 md:w-16 rounded-full" />
         </NavLink>
 
         {/* Hamburger for mobile */}
@@ -59,7 +63,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex flex-wrap justify-start gap-6 px-10 py-3 font-semibold text-lg bg-white">
+      <div className="hidden md:flex flex-wrap justify-start gap-6 px-10 py-3 font-semibold text-lg ">
         <NavLink to="/" className={navClass}>Home</NavLink>
 
         {/* Dropdown */}
@@ -89,7 +93,10 @@ const Navbar = () => {
         <NavLink to="/blog" className={navClass}>Blog</NavLink>
         <NavLink to="/about" className={navClass}>About</NavLink>
         <NavLink to="/contact" className={navClass}>Contact</NavLink>
-                <div><button onClick={hanldeTheme} className='border p-2'>theme</button></div>
+          <div>
+          {theme==="light"?  <button onClick={hanldeTheme} className='font-medium text-2xl'><FaMoon/></button>
+            :<button onClick={hanldeTheme} className='font-medium text-2xl'><IoSunny/></button>}
+          </div>
 
       </div>
 
