@@ -42,8 +42,8 @@ const images1 = [
 
   return (
     <div>
-       <div className="relative w-full ">
-      <div className="overflow-hidden rounded-2xl shadow-lg">
+       <div className="relative w-full md:mt-35 sm:mt-20">
+      <div className="overflow-hidden rounded-2xl shadow-lg ">
         {images.map((img, index) => (
           <div
             key={index}

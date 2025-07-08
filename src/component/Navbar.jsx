@@ -95,8 +95,8 @@ const Navbar = () => {
         <NavLink to="/about" className={navClass}>About</NavLink>
         <NavLink to="/contact" className={navClass}>Contact</NavLink>
           <div>
-          {theme==="light"?  <button onClick={hanldeTheme} className='font-medium text-2xl'><FaMoon/></button>
-            :<button onClick={hanldeTheme} className='font-medium text-2xl'><IoSunny/></button>}
+          {theme==="light"?  <button onClick={hanldeTheme} className='font-medium text-2xl cursor-pointer'><FaMoon/></button>
+            :<button onClick={hanldeTheme} className='font-medium text-2xl cursor-pointer'><IoSunny/></button>}
           </div>
 
       </div>
@@ -119,6 +119,10 @@ const Navbar = () => {
           <NavLink to="/blog" className={navClass} onClick={toggleMobileMenu}>Blog</NavLink>
           <NavLink to="/about" className={navClass} onClick={toggleMobileMenu}>About</NavLink>
           <NavLink to="/contact" className={navClass} onClick={toggleMobileMenu}>Contact</NavLink>
+           <div>
+          {theme==="light"?  <button onClick={hanldeTheme} className='font-medium text-2xl cursor-pointer'><FaMoon/></button>
+            :<button onClick={hanldeTheme} className='font-medium text-2xl cursor-pointer'><IoSunny/></button>}
+          </div>
         </nav>
       </div>
 

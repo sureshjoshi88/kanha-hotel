@@ -9,10 +9,10 @@ const MainLyout = () => {
   
   return (
     <div>
-      <header className={`fixed top-0 w-full ${theme==='light'?'bg-gray-50':'bg-black'}`}>
+      <header className={`fixed top-0 w-full z-50 ${theme==='light'?'bg-gray-50':'bg-black'}`}>
         <Navbar/>
       </header>
-      <main>
+      <main className='mt-14 md:mt-34'>
         <Outlet/>
       </main>
       <footer>
