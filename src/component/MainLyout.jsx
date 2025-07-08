@@ -2,11 +2,14 @@ import React, { memo } from 'react'
 import Navbar from './Navbar'
 import { Outlet } from 'react-router-dom'
 import Foter from './Foter'
+import { useTheme } from '../themeContext/UseTheme'
 
 const MainLyout = () => {
+    const { theme, setTheme } = useTheme()
+  
   return (
     <div>
-      <header>
+      <header className={`fixed top-0 w-full ${theme==='light'?'bg-gray-50':'bg-black'}`}>
         <Navbar/>
       </header>
       <main>

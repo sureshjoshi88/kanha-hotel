@@ -35,7 +35,8 @@ const Navbar = () => {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
-    <div className="w-full  shadow-md relative">
+    
+    <div className='w-full shadow-md relative'>
       {/* Top Section */}
       <div className="flex items-center justify-between px-4 md:px-10 py-2">
         {/* Logo */}
