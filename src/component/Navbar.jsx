@@ -7,6 +7,7 @@ import { useTheme } from '../themeContext/UseTheme';
 import { FaMoon } from "react-icons/fa6";
 import { IoSunny } from "react-icons/io5";
 import { useForm } from 'react-hook-form'
+import { TiDelete } from "react-icons/ti";
 
 
 
@@ -158,8 +159,9 @@ const togleForm = ()=> setFrom(!form)
 
       
      { form&& <div className="left-1/2 -translate-x-1/2 top-1  absolute w-100  bg-white p-6  shadow-md rounded-xl ">
-     <div className='text-end'>
-     <span onClick={togleForm} className='hover:bg-red-500 hover:text-white text-3xl ps-1 pe-1'></span>
+     <div className='text-end p-0'>
+     <button  onClick={togleForm} className='rounded-full text-3xl cursor-pointer hover:bg-red-500 hover:text-white'><TiDelete />
+</button>
      </div>
       <h2 className="text-2xl font-semibold mb-2 text-center">Hotel Booking Form</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
