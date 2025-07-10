@@ -12,7 +12,7 @@ const MainLyout = () => {
       <header className={`fixed top-0 w-full z-50 ${theme==='light'?'bg-gray-50':'bg-black'}`}>
         <Navbar/>
       </header>
-      <main className='mt-14 md:mt-34'>
+      <main className='mt-14 md:mt-34 '>
         <Outlet/>
       </main>
       <footer>
