@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import formimg from '../images/form.png'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,9 +34,11 @@ const Contact = () => {
   };
 
   return (
-    <div className=" flex items-center justify-around px-4">
-     
-      <div>
+    <div className=" grid md:grid-cols-2 gap-5 px-4">
+       <div className='w-full mt-2'>
+        <img  src={formimg} alt="" />
+      </div>
+      <div className='w-full mt-2'>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl shadow-xl w-full max-w-lg">
         <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Hotel Booking Form</h2>
 
@@ -119,9 +122,7 @@ const Contact = () => {
         </div>
       </form>
         </div>
-         <div>
-        <img src="https://png.pngtree.com/png-vector/20200428/ourmid/pngtree-illustration-of-a-man-working-on-a-laptop-png-image_2195561.jpg" alt="" />
-      </div>
+       
     </div>
   );
 }
