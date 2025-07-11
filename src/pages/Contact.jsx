@@ -33,7 +33,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+    <div className=" flex items-center justify-around px-4">
+     
+      <div>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl shadow-xl w-full max-w-lg">
         <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Hotel Booking Form</h2>
 
@@ -116,6 +118,10 @@ const Contact = () => {
           </button>
         </div>
       </form>
+        </div>
+         <div>
+        <img src="https://png.pngtree.com/png-vector/20200428/ourmid/pngtree-illustration-of-a-man-working-on-a-laptop-png-image_2195561.jpg" alt="" />
+      </div>
     </div>
   );
 }
