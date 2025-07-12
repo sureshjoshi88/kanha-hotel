@@ -6,6 +6,7 @@ const Home = lazy(()=>import('./pages/Home'))
 const DeluxRoom = lazy(()=>import('./pages/DeluxRoom'))
 const Default = lazy(()=>import('./pages/Default'))
 const Contact = lazy(()=>import('./pages/Contact'))
+const Gallery = lazy(()=>import('./pages/Gallery'))
 
 
 
@@ -30,6 +31,7 @@ function App() {
   <Route index element={<Home/>}/>
   <Route path='/deluxroom' element={<DeluxRoom/>}/>
   <Route path='/contact' element={<Contact/>}/>
+  <Route path='/gallery' element={<Gallery/>}/>
   </Route>
  </Routes>
 </Suspense>
