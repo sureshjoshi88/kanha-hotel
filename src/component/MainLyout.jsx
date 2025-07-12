@@ -15,7 +15,7 @@ const MainLyout = () => {
       <main className='mt-14 md:mt-34 '>
         <Outlet/>
       </main>
-      <footer>
+      <footer className='mt-4'>
         <Foter/>
       </footer>
     </div>

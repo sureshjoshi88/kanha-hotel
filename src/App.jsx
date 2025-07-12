@@ -7,6 +7,7 @@ const DeluxRoom = lazy(()=>import('./pages/DeluxRoom'))
 const Default = lazy(()=>import('./pages/Default'))
 const Contact = lazy(()=>import('./pages/Contact'))
 const Gallery = lazy(()=>import('./pages/Gallery'))
+const MenuPage = lazy(()=>import('./pages/MenuPage'))
 
 
 
@@ -32,6 +33,7 @@ function App() {
   <Route path='/deluxroom' element={<DeluxRoom/>}/>
   <Route path='/contact' element={<Contact/>}/>
   <Route path='/gallery' element={<Gallery/>}/>
+  <Route path='/menu' element={<MenuPage/>}/>
   </Route>
  </Routes>
 </Suspense>

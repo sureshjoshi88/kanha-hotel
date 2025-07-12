@@ -89,11 +89,11 @@ export const hotelImages = [
   },
   {
     id: 23,
-    url: "https://source.unsplash.com/800x600/?hotel,city",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbOYCoUjxZ2GQ6t454z_zJXPt33OQ41N1IvA&s",
   },
   {
     id: 24,
-    url: "https://source.unsplash.com/800x600/?hotel,beach",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbOYCoUjxZ2GQ6t454z_zJXPt33OQ41N1IvA&s",
   },
   {
     id: 25,
