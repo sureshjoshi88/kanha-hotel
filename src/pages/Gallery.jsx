@@ -5,9 +5,9 @@ const Gallery = () => {
 
   return (
     <div>
-      <div className='grid gap-4 md:grid-cols-3 mt-4  p-2 bg-gray-200 '>
+      <div className='grid gap-4 md:grid-cols-3 mt-4  p-2 '>
         {hotelImages.map((item) => (
-          <div key={item.id} className='overflow-hidden'>
+          <div key={item.id} className='overflow-hidden p-1'>
             <img className='h-62 object-cover w-full hover:scale-120' src={item.url} alt="" />
           </div>
         ))}
