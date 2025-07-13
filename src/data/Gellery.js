@@ -97,6 +97,6 @@ export const hotelImages = [
   },
   {
     id: 25,
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbOYCoUjxZ2GQ6t454z_zJXPt33OQ41N1IvA&s",
+    url: "https://images7.alphacoders.com/362/362619.jpg",
   },
 ];
