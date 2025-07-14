@@ -6,6 +6,7 @@ import { memo } from 'react';
 import hotel from '../images/hotel.jpg'
 import front from '../images/front-img.jpg'
 import room1 from '../images/room1.jpg'
+import desinroom from '../images/desingroom.jpg'
 
 
 
@@ -104,7 +105,7 @@ const Home = () => {
       <div className='grid md:grid-cols-2 gap-5 mt-5'>
 
         <div className='p-2'>
-          <img className='h-100  w-full rounded ' src={room1} alt="Rooms" />
+          <img className='h-100  w-full rounded ' src={desinroom} alt="Rooms" />
         </div>
         <div className='p-2 flex flex-col justify-center'>
           <p className='font-semibold text-2xl md:pt-4 pt-2'>Timeless Luxury Retreat</p>
