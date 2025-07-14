@@ -5,7 +5,7 @@ import { memo } from 'react';
 //import images
 import hotel from '../images/hotel.jpg'
 import front from '../images/front-img.jpg'
-import room1 from '../images/room1.jpg'
+import room1 from '../images/edit.png'
 import desinroom from '../images/desingroom.jpg'
 
 
