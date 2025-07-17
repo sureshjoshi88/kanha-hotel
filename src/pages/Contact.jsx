@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import formimg from '../images/form.png'
+import { memo } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -127,4 +128,4 @@ const Contact = () => {
   );
 }
 
-export default Contact
+export default memo(Contact)

@@ -1,4 +1,5 @@
 import React from 'react'
+import { memo } from 'react'
 
 const Foter = () => {
   return (
@@ -95,4 +96,4 @@ const Foter = () => {
   )
 }
 
-export default Foter
+export default memo(Foter)
