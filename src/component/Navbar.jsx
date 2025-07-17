@@ -8,15 +8,31 @@ import { FaMoon } from "react-icons/fa6";
 import { IoSunny } from "react-icons/io5";
 import { useForm } from 'react-hook-form'
 import { TiDelete } from "react-icons/ti";
+import {z} from 'zod'
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const Navbar = () => {
-  
+
+    const bookingSchema = z.object({
+    name: z.string().min(1, "Name is required"),
+    email: z.string().email("Invalid email address"),
+    checkin: z.string().min(1, "Check-in date is required"),
+    checkout: z.string().min(1, "Check-out date is required"),
+    guests: z
+      .number({ invalid_type_error: "Please enter number of guests" })
+      .min(1, "At least 1 guest required"),
+    roomType: z.enum(["Standard", "Deluxe", "Suite"], {
+      required_error: "Please select a room type",
+    }),
+  });
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors }
-  } = useForm()
+  } = useForm({resolver:zodResolver(bookingSchema), defaultValues: {
+      guests: 1,
+    },})
 
   const onSubmit = (data) => {
     console.log("Booking Data:", data)
@@ -162,90 +178,99 @@ const togleForm = ()=> setFrom(!form)
      </div>
       <h2 className="text-2xl font-semibold mb-2 text-center">Hotel Booking Form</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
-        {/* Name */}
-        <div>
-          <label className="block mb-1 font-medium">Full Name</label>
-          <input
-            type="text"
-            {...register("name", { required: "Name is required" })}
-            className="w-full border rounded-md p-2"
-          />
-          {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
-        </div>
+      {/* Name */}
+      <div>
+        <label className="block mb-1 font-medium">Full Name</label>
+        <input
+          type="text"
+          {...register("name")}
+          className="w-full border rounded-md p-2"
+        />
+        {errors.name && (
+          <p className="text-red-500 text-sm">{errors.name.message}</p>
+        )}
+      </div>
 
-        {/* Email */}
-        <div>
-          <label className="block mb-1 font-medium">Email</label>
-          <input
-            type="email"
-            {...register("email", {
-              required: "Email is required",
-              pattern: { value: /^\S+@\S+$/i, message: "Invalid email" }
-            })}
-            className="w-full border rounded-md p-2"
-          />
-          {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
-        </div>
+      {/* Email */}
+      <div>
+        <label className="block mb-1 font-medium">Email</label>
+        <input
+          type="email"
+          {...register("email")}
+          className="w-full border rounded-md p-2"
+        />
+        {errors.email && (
+          <p className="text-red-500 text-sm">{errors.email.message}</p>
+        )}
+      </div>
 
-        {/* Check-in Date */}
-        <div>
-          <label className="block mb-1 font-medium">Check-in Date</label>
-          <input
-            type="date"
-            {...register("checkin", { required: "Check-in date is required" })}
-            className="w-full border rounded-md p-2"
-          />
-          {errors.checkin && <p className="text-red-500 text-sm">{errors.checkin.message}</p>}
-        </div>
+      {/* Check-in Date */}
+      <div>
+        <label className="block mb-1 font-medium">Check-in Date</label>
+        <input
+          type="date"
+          {...register("checkin")}
+          className="w-full border rounded-md p-2"
+        />
+        {errors.checkin && (
+          <p className="text-red-500 text-sm">{errors.checkin.message}</p>
+        )}
+      </div>
 
-        {/* Check-out Date */}
-        <div>
-          <label className="block mb-1 font-medium">Check-out Date</label>
-          <input
-            type="date"
-            {...register("checkout", { required: "Check-out date is required" })}
-            className="w-full border rounded-md p-2"
-          />
-          {errors.checkout && <p className="text-red-500 text-sm">{errors.checkout.message}</p>}
-        </div>
+      {/* Check-out Date */}
+      <div>
+        <label className="block mb-1 font-medium">Check-out Date</label>
+        <input
+          type="date"
+          {...register("checkout")}
+          className="w-full border rounded-md p-2"
+        />
+        {errors.checkout && (
+          <p className="text-red-500 text-sm">{errors.checkout.message}</p>
+        )}
+      </div>
 
-        {/* Guests */}
-        <div>
-          <label className="block mb-1 font-medium">Number of Guests</label>
-          <input
-            type="number"
-            min="1"
-            {...register("guests", { required: "Please enter number of guests" })}
-            className="w-full border rounded-md p-2"
-          />
-          {errors.guests && <p className="text-red-500 text-sm">{errors.guests.message}</p>}
-        </div>
+      {/* Guests */}
+      <div>
+        <label className="block mb-1 font-medium">Number of Guests</label>
+        <input
+          type="number"
+          min="1"
+          {...register("guests", { valueAsNumber: true })}
+          className="w-full border rounded-md p-2"
+        />
+        {errors.guests && (
+          <p className="text-red-500 text-sm">{errors.guests.message}</p>
+        )}
+      </div>
 
-        {/* Room Type */}
-        <div>
-          <label className="block mb-1 font-medium">Room Type</label>
-          <select
-            {...register("roomType", { required: "Please select a room type" })}
-            className="w-full border rounded-md p-2"
-          >
-            <option value="">-- Select --</option>
-            <option value="Standard">Standard</option>
-            <option value="Deluxe">Deluxe</option>
-            <option value="Suite">Suite</option>
-          </select>
-          {errors.roomType && <p className="text-red-500 text-sm">{errors.roomType.message}</p>}
-        </div>
+      {/* Room Type */}
+      <div>
+        <label className="block mb-1 font-medium">Room Type</label>
+        <select
+          {...register("roomType")}
+          className="w-full border rounded-md p-2"
+        >
+          <option value="">-- Select --</option>
+          <option value="Standard">Standard</option>
+          <option value="Deluxe">Deluxe</option>
+          <option value="Suite">Suite</option>
+        </select>
+        {errors.roomType && (
+          <p className="text-red-500 text-sm">{errors.roomType.message}</p>
+        )}
+      </div>
 
-        {/* Submit */}
-        <div className="text-center">
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
-          >
-            Book Now
-          </button>
-        </div>
-      </form>
+      {/* Submit */}
+      <div className="text-center">
+        <button
+          type="submit"
+          className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+        >
+          Book Now
+        </button>
+      </div>
+    </form>
     </div>}
     </div>
   );
