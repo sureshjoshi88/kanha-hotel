@@ -1,5 +1,6 @@
 import React from 'react';
 import { hotelRooms } from '../data/HotelData';
+import { memo } from 'react';
 
 const DeluxRoom = () => {
   return (
@@ -30,4 +31,4 @@ const DeluxRoom = () => {
   );
 };
 
-export default DeluxRoom;
+export default memo(DeluxRoom);

@@ -1,4 +1,5 @@
 import React from 'react'
+import { memo } from 'react'
 
 const MenuPage = () => {
   return (
@@ -8,4 +9,4 @@ const MenuPage = () => {
   )
 }
 
-export default MenuPage
+export default memo(MenuPage)

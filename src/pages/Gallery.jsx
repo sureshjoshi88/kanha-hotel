@@ -1,5 +1,7 @@
 import React from 'react'
 import { hotelImages } from '../data/Gellery'
+import { memo } from 'react';
+
 const Gallery = () => {
   console.log(hotelImages);
 
@@ -16,4 +18,4 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default memo(Gallery)
