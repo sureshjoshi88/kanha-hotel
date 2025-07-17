@@ -16,7 +16,11 @@ const Navbar = () => {
     const bookingSchema = z.object({
     name: z.string().min(1, "Name is required"),
     email: z.string().email("Invalid email address"),
-    checkin: z.string().min(1, "Check-in date is required"),
+    phone: z
+      .string()
+      .min(10, "Phone number must be at least 10 digits")
+      .max(15, "Phone number is too long")
+      .regex(/^[0-9]+$/, "Phone number must contain only digits"),    checkin: z.string().min(1, "Check-in date is required"),
     checkout: z.string().min(1, "Check-out date is required"),
     guests: z
       .number({ invalid_type_error: "Please enter number of guests" })
@@ -171,7 +175,7 @@ const togleForm = ()=> setFrom(!form)
       )}
 
       
-     { form&& <div className="left-1/2 -translate-x-1/2 top-1  absolute w-100  bg-white p-6  shadow-md rounded-xl ">
+     { form&& <div className="left-1/2 -translate-x-1/2 top-15 overflow-y-scroll md:h-140 mb-4   absolute w-100  bg-white p-6  shadow-md rounded-xl side-line">
      <div className='text-end p-0'>
      <button  onClick={togleForm} className='rounded-full text-3xl cursor-pointer hover:bg-red-500 hover:text-white'><TiDelete />
 </button>
@@ -201,6 +205,18 @@ const togleForm = ()=> setFrom(!form)
         />
         {errors.email && (
           <p className="text-red-500 text-sm">{errors.email.message}</p>
+        )}
+      </div>
+
+        <div>
+        <label className="block mb-1 font-medium">Phone Number</label>
+        <input
+          type="tel"
+          {...register("phone")}
+          className="w-full border rounded-md p-2"
+        />
+        {errors.phone && (
+          <p className="text-red-500 text-sm">{errors.phone.message}</p>
         )}
       </div>
 
