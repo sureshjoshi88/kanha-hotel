@@ -119,7 +119,7 @@ const togleForm = ()=> setFrom(!form)
             </svg>
           </button>
           {dropdownOpen && (
-            <ul className="absolute top-6 left-0 bg-white shadow-lg rounded-md w-48 z-10">
+            <ul className="absolute top-6 left-0 bg-white shadow-lg rounded-md w-60 z-10 p-2">
               <li><NavLink to="/deluxroom" className={navClass}>Deluxe Rooms</NavLink></li>
               {/* <li><NavLink to="/deluxroom" className={navClass}>Deluxe Suites</NavLink></li> */}
               <li><NavLink to="/modern" className={navClass}>Modern Luxury Rooms</NavLink></li>

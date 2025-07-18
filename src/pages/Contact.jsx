@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import formimg from '../images/form.png'
 import { memo } from 'react';
+import formimg from "../images/from1.png"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
