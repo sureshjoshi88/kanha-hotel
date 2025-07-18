@@ -40,7 +40,7 @@ const Contact = () => {
         <img  src={formimg} alt="" />
       </div>
       <div className='w-full mt-2'>
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl shadow-xl w-full max-w-lg">
+      <form onSubmit={handleSubmit} className=" p-6 rounded-2xl shadow-xl w-full max-w-lg">
         <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Hotel Booking Form</h2>
 
         <div className="grid grid-cols-1 gap-4">
