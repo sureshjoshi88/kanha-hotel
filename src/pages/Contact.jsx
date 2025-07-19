@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { memo } from 'react';
 import formimg from "../images/from1.png"
+import { useTheme } from '../themeContext/UseTheme';
+
 
 const Contact = () => {
+  const {theme,setTheme} = useTheme();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -39,9 +42,9 @@ const Contact = () => {
        <div className='w-full mt-2'>
         <img  src={formimg} alt="" />
       </div>
-      <div className='w-full mt-2'>
-      <form onSubmit={handleSubmit} className=" p-6 rounded-2xl shadow-xl w-full max-w-lg">
-        <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Hotel Booking Form</h2>
+      <div className={`w-full mt-2 ${theme==='light'?"bg-white":'bg-black text-white'}`}>
+      <form onSubmit={handleSubmit} className="p-6 rounded-2xl shadow-xl w-full max-w-lg">
+        <h2 className="text-2xl font-bold mb-6 text-center">Hotel Booking Form</h2>
 
         <div className="grid grid-cols-1 gap-4">
           <input
@@ -116,7 +119,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 transition duration-300"
+            className="bg-blue-600 text-white p-3 cursor-pointer font-semibold rounded-md hover:bg-blue-700 transition duration-300"
           >
             Book Now
           </button>
