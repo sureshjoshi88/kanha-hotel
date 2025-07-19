@@ -77,10 +77,10 @@ const togleForm = ()=> setFrom(!form)
     
     <div className='w-full shadow-md relative'>
       {/* Top Section */}
-      <div className="flex items-center justify-between px-4 md:px-10 py-2">
+      <div className="flex items-center justify-between px-4 md:px-10 py-1">
         {/* Logo */}
         <NavLink to="/">
-          <img src={logo} alt="Logo" className="w-10 md:h-16 md:w-16 rounded-full" />
+          <img src={logo} alt="Logo" className="w-10 md:h-13 md:w-13 rounded-full" />
         </NavLink>
 
         {/* Hamburger for mobile */}

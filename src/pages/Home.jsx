@@ -54,7 +54,7 @@ const Home = () => {
   return (
     <div>
       {/* MAIN SLIDER */}
-      <div className="relative w-full md:mt-35 sm:mt-20">
+      <div className="relative w-full md:mt-30 sm:mt-20">
         <div className="overflow-hidden rounded-2xl shadow-lg ">
           {images.map((img, index) => (
             <div
@@ -62,7 +62,7 @@ const Home = () => {
               className={`transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0 absolute inset-0"
                 }`}
             >
-              <img src={img} alt={`Slide ${index}`} className="w-full h-110 object-cover" />
+              <img src={img} alt={`Slide ${index}`} className="w-full h-120 object-cover" />
               <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center text-white p-4">
                 <h2 className="text-xl md:text-5xl font-bold mb-2">Welcome To Kanha Hotel</h2>
                 <p className="text-sm md:text-2xl max-w-md font-medium">
