@@ -42,7 +42,7 @@ const Contact = () => {
        <div className='w-full mt-2'>
         <img  src={formimg} alt="" />
       </div>
-      <div className={`w-full mt-2 ${theme==='light'?"bg-white":'bg-black text-white'}`}>
+      <div className={`w-full mt-2 `}>
       <form onSubmit={handleSubmit} className="p-6 rounded-2xl shadow-xl w-full max-w-lg">
         <h2 className="text-2xl font-bold mb-6 text-center">Hotel Booking Form</h2>
 

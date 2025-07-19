@@ -54,7 +54,7 @@ const togleForm = ()=> setFrom(!form)
 
   const hanldeTheme = () => {
     if (theme === 'light') {
-      document.body.style.backgroundColor = "black"
+      document.body.style.backgroundColor = "#1A1A2E"
       document.body.style.color = "white"
       setTheme('dark')
     } else {

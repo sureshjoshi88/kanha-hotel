@@ -1,11 +1,13 @@
 import React from 'react'
 import { memo } from 'react'
+import { useTheme } from '../themeContext/UseTheme'
 
 const Foter = () => {
+  const {theme,setTheme} = useTheme();
   return (
     <div>
       <div>
-   <footer className="bg-gray-900 text-white py-10 px-5">
+   <footer className={`${theme==="light"?"bg-gray-900":'bg-gray-800'} text-white py-10 px-5`}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1 */}
         <div className="space-y-6">
