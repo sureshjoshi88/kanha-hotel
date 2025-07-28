@@ -175,7 +175,7 @@ const togleForm = ()=> setFrom(!form)
       )}
 
       
-     { form&& <div className="left-1/2 -translate-x-1/2 top-15 overflow-y-scroll md:h-140 mb-4   absolute w-100  bg-white p-6  shadow-md rounded-xl side-line">
+     { form&& <div className="left-1/2 -translate-x-1/2 top-15 overflow-y-scroll md:h-140 mb-4   absolute w-100 md:w-150  bg-white p-6  shadow-md rounded-xl side-line">
      <div className='text-end p-0'>
      <button  onClick={togleForm} className='rounded-full text-3xl cursor-pointer hover:bg-red-500 hover:text-white'><TiDelete />
 </button>
