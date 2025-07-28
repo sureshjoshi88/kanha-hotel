@@ -131,7 +131,6 @@ const togleForm = ()=> setFrom(!form)
         <NavLink to="/dining" className={navClass}>Dining</NavLink>
         <NavLink to="/gallery" className={navClass}>Gallery</NavLink>
         <NavLink to="/menu" className={navClass}>Menu</NavLink>
-        <NavLink to="/blog" className={navClass}>Blog</NavLink>
         <NavLink to="/about" className={navClass}>About</NavLink>
         <NavLink to="/contact" className={navClass}>Contact</NavLink>
           <div>
@@ -156,7 +155,6 @@ const togleForm = ()=> setFrom(!form)
           <NavLink to="/dining" className={navClass} onClick={toggleMobileMenu}>Dining</NavLink>
           <NavLink to="/gallery" className={navClass} onClick={toggleMobileMenu}>Gallery</NavLink>
           <NavLink to="/menu" className={navClass} onClick={toggleMobileMenu}>Menu</NavLink>
-          <NavLink to="/blog" className={navClass} onClick={toggleMobileMenu}>Blog</NavLink>
           <NavLink to="/about" className={navClass} onClick={toggleMobileMenu}>About</NavLink>
           <NavLink to="/contact" className={navClass} onClick={toggleMobileMenu}>Contact</NavLink>
            <div>
