@@ -67,7 +67,7 @@ const Foter = () => {
               <a href="#">
                 <img src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/kanha_hotel_restaurant?igsh=MWh3cnZkeXdteWdoNw==">
                 <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram" />
               </a>
               <a href="#">
