@@ -86,7 +86,7 @@ const Foter = () => {
         {/* Column 3 */}
         <div className="flex items-end">
           <p className="text-sm text-gray-400">
-            © 2023-24 <span className="text-white">Kanha Hotel</span> (D&M by{' '}
+            © 2025-26 <span className="text-white">Kanha Hotel</span> (D&M by{' '}
             <span className="text-blue-400">AHIT</span>). All Rights Reserved.
           </p>
         </div>
