@@ -8,7 +8,7 @@ const About = () => {
         <div className="w-full md:w-1/2">
           {/* Yaha ek hotel ki sundar image lagana */}
           <img
-            src="your-image-url.jpg" // 👈 Yaha apni hotel ya restaurant ki image ka URL daal do
+            src="https://149345965.v2.pressablecdn.com/wp-content/uploads/img-hotels-IADGV_006-Dusk-Exterior-home.jpg" // 👈 Yaha apni hotel ya restaurant ki image ka URL daal do
             alt="Kanha Hotel and Restaurant"
             className="rounded-2xl shadow-lg w-full object-cover"
           />

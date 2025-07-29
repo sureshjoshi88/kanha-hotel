@@ -2,6 +2,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import MainLyout from './component/MainLyout'
 import { lazy, Suspense } from 'react'
+import About from './pages/About'
 const Home = lazy(()=>import('./pages/Home'))
 const DeluxRoom = lazy(()=>import('./pages/DeluxRoom'))
 const Default = lazy(()=>import('./pages/Default'))
@@ -34,6 +35,7 @@ function App() {
   <Route path='/contact' element={<Contact/>}/>
   <Route path='/gallery' element={<Gallery/>}/>
   <Route path='/menu' element={<MenuPage/>}/>
+  <Route path='/about' element={<About/>}/>
   </Route>
  </Routes>
 </Suspense>
