@@ -49,8 +49,21 @@ const About = () => {
       </div>
     </section>
     <div className="bg-white py-12 px-4 md:px-20">
-      <p className="font-medium text-xl">Our Story</p>
+      <div className="mt-3">
+        <p className="font-medium text-xl">Our Story</p>
       <p className="text-gray-600 leading-7 text-lg">Founded with a vision to create a sanctuary of luxury, our journey started with a commitment to exceptional hospitality. Each room, adorned with meticulous details and designed for absolute comfort, reflects our dedication to guest satisfaction. Our culinary adventures began in our kitchens, where passionate chefs crafted menus that celebrate local flavors and international cuisines. Over the years, Kanha Hotel has become a cherished destination, where travelers find solace, families create memories, and celebrations become extraordinary. Our story is one of warmth, dedication, and a relentless pursuit of creating unforgettable moments for our guests. Come, be a part of our story, and experience the essence of Kanha Hotel – where every stay is a tale of indulgence and hospitality.</p>
+      </div>
+      <div>
+        <p className="font-medium text-xl">Our Vision</p>
+      <p className="text-gray-600 leading-7 text-lg">At Kanha Hotel, our vision is to redefine hospitality by creating an oasis of tranquility and luxury, where every guest feels cherished and every moment becomes a cherished memory. We aspire to be the epitome of genuine warmth, offering personalized experiences that exceed expectations. Our aim is to cultivate an environment where comfort meets sophistication, and where every guest, whether here for leisure or business, feels a sense of belonging. Through unwavering dedication and attention to detail, we strive to be the destination of choice, where heartfelt hospitality becomes a hallmark of our identity.</p>
+      </div>
+      <div>
+        <p className="font-medium text-xl">Our Commitments</p>
+      <p className="text-gray-600 leading-7 text-lg">Our commitment at Kanha Hotel is deeply rooted in providing unparalleled service and hospitality to our guests. We pledge to offer an atmosphere of genuine care and respect, ensuring every guest feels valued and cherished. From the moment you arrive, our dedicated team is devoted to making your stay seamless, memorable, and tailored to your needs. We are committed to maintaining the highest standards of cleanliness, comfort, and guest satisfaction in every aspect of our service. Your trust in us is our most treasured asset, and we are committed to upholding it with every interaction, ensuring your experience at Kanha Hotel is nothing short of exceptional.</p>
+      </div>
+    </div>
+    <div>
+      <p className="text-center text-2xl ">Our Management</p>
     </div>
     </>
   );
