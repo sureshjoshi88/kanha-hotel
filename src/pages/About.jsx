@@ -2,6 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
+    <>
     <section className="bg-white py-12 px-4 md:px-20">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* ==== Image ==== */}
@@ -47,6 +48,11 @@ const About = () => {
         </div>
       </div>
     </section>
+    <div className="bg-white py-12 px-4 md:px-20">
+      <p>Our Story</p>
+      <p>Founded with a vision to create a sanctuary of luxury, our journey started with a commitment to exceptional hospitality. Each room, adorned with meticulous details and designed for absolute comfort, reflects our dedication to guest satisfaction. Our culinary adventures began in our kitchens, where passionate chefs crafted menus that celebrate local flavors and international cuisines. Over the years, Kanha Hotel has become a cherished destination, where travelers find solace, families create memories, and celebrations become extraordinary. Our story is one of warmth, dedication, and a relentless pursuit of creating unforgettable moments for our guests. Come, be a part of our story, and experience the essence of Kanha Hotel – where every stay is a tale of indulgence and hospitality.</p>
+    </div>
+    </>
   );
 };
 
