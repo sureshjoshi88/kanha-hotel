@@ -7,9 +7,8 @@ const About = () => {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* ==== Image ==== */}
         <div className="w-full md:w-1/2">
-          {/* Yaha ek hotel ki sundar image lagana */}
           <img
-            src="https://149345965.v2.pressablecdn.com/wp-content/uploads/img-hotels-IADGV_006-Dusk-Exterior-home.jpg" // 👈 Yaha apni hotel ya restaurant ki image ka URL daal do
+            src="https://149345965.v2.pressablecdn.com/wp-content/uploads/img-hotels-IADGV_006-Dusk-Exterior-home.jpg" daal do
             alt="Kanha Hotel and Restaurant"
             className="rounded-2xl shadow-lg w-full object-cover"
           />
@@ -48,7 +47,7 @@ const About = () => {
         </div>
       </div>
     </section>
-    <div className="bg-white py-12 px-4 md:px-20">
+    <div className="bg-white  py-12 px-4 md:px-20">
       <div className="mt-3">
         <p className="font-medium text-xl">Our Story</p>
       <p className="text-gray-600 leading-7 text-lg">Founded with a vision to create a sanctuary of luxury, our journey started with a commitment to exceptional hospitality. Each room, adorned with meticulous details and designed for absolute comfort, reflects our dedication to guest satisfaction. Our culinary adventures began in our kitchens, where passionate chefs crafted menus that celebrate local flavors and international cuisines. Over the years, Kanha Hotel has become a cherished destination, where travelers find solace, families create memories, and celebrations become extraordinary. Our story is one of warmth, dedication, and a relentless pursuit of creating unforgettable moments for our guests. Come, be a part of our story, and experience the essence of Kanha Hotel – where every stay is a tale of indulgence and hospitality.</p>
