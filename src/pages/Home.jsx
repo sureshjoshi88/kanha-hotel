@@ -4,10 +4,10 @@ import { IoIosArrowBack } from "react-icons/io";
 import { memo } from 'react';
 
 //import images
-import hotel from '../images/hotel.jpg';
-import front from '../images/front-img.jpg';
-import room1 from '../images/edit.png';
-import desinroom from '../images/desingroom.jpg';
+import hotel from '../assets/images/hotel.jpg';
+import front from '../assets/images/front-img.jpg';
+import room1 from '../assets/images/room.png';
+import desinroom from '../assets/images/desinroom.jpg';
 
 const Home = () => {
   const images = [
