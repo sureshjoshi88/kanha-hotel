@@ -68,8 +68,8 @@ const togleForm = ()=> setFrom(!form)
   // Active link style
   const navClass = ({ isActive }) =>
     isActive
-      ? 'text-blue-600 font-semibold border-b-2 border-blue-600'
-      : 'hover:text-blue-600';
+      ? 'text-blue-500 font-semibold border-b-2 border-blue-500'
+      : 'hover:text-blue-500';
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
@@ -119,7 +119,7 @@ const togleForm = ()=> setFrom(!form)
             </svg>
           </button>
           {dropdownOpen && (
-            <ul className="absolute top-6 left-0 bg-white shadow-lg rounded-md w-60 z-10 p-2">
+            <ul className={`absolute top-6 left-0  shadow-lg rounded-md w-60 z-10 p-2 ${theme==='light'?"bg-gray-100":"bg-gray-950"}`}>
               <li><NavLink to="/deluxroom" className={navClass}>Deluxe Rooms</NavLink></li>
               {/* <li><NavLink to="/deluxroom" className={navClass}>Deluxe Suites</NavLink></li> */}
               <li><NavLink to="/modern" className={navClass}>Modern Luxury Rooms</NavLink></li>
