@@ -8,10 +8,11 @@ import hotel from '../assets/images/hotel.jpg';
 import front from '../assets/images/front-img.jpg';
 import room1 from '../assets/images/IMG-20250807-WA0025.jpg';
 import desinroom from '../assets/images/desinroom.jpg';
+import front2 from "../assets/images/IMG-20250807-WA0026.jpg"
 
 const Home = () => {
   const images = [
-    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/169124334.jpg?k=f7c9caabf8254663949bebfc15302612f6fa37aeecc6ec0715d6648a049311ca&o=&hp=1",
+   front2,
     hotel,
     front,
   ];
