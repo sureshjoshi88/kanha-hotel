@@ -6,7 +6,7 @@ import { memo } from 'react';
 //import images
 import hotel from '../assets/images/hotel.jpg';
 import front from '../assets/images/front-img.jpg';
-import room1 from '../assets/images/room.png';
+import room1 from '../assets/images/IMG-20250807-WA0025.jpg';
 import desinroom from '../assets/images/desinroom.jpg';
 
 const Home = () => {
@@ -111,13 +111,13 @@ const Home = () => {
           </p>
         </div>
         <div className='p-2'>
-          <img className='h-100 w-full rounded' src={room1} alt="Rooms" />
+          <img className='h-110 shadow-2xl w-full rounded' src={room1} alt="Rooms" />
         </div>
       </div>
 
       <div className='grid md:grid-cols-2 gap-5 mt-5'>
         <div className='p-2'>
-          <img className='h-100 w-full rounded' src={desinroom} alt="Rooms" />
+          <img className='h-110 shadow-2xl w-full rounded' src={desinroom} alt="Rooms" />
         </div>
         <div className='p-2 flex flex-col justify-center'>
           <p className='font-semibold text-2xl md:pt-4 pt-2'>Timeless Luxury Retreat</p>
@@ -141,7 +141,7 @@ const Home = () => {
                 className={`transition-opacity duration-700 ease-in-out ${index === currentFood ? "opacity-100" : "opacity-0 absolute inset-0"
                   }`}
               >
-                <img src={img} alt={`Slide ${index}`} className="w-full h-100 object-cover" />
+                <img src={img} alt={`Slide ${index}`} className="w-full h-110 shadow-2xl object-cover" />
               </div>
             ))}
           </div>

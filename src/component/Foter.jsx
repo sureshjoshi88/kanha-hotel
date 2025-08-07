@@ -7,13 +7,13 @@ const Foter = () => {
   return (
     <div>
       <div>
-   <footer className={`${theme==="light"?"bg-gray-900":'bg-gray-800'} text-white py-10 px-5`}>
+   <footer className={` py-10 px-5`}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Column 1 */}
         <div className="space-y-6">
           <div>
             <h3 className="text-lg font-semibold mb-2">Rooms &amp; Suites</h3>
-            <ul className="space-y-1 text-sm text-gray-300">
+            <ul className="space-y-1 text-sm ">
               <li className='cursor-pointer hover:border-b-2 w-fit'>Modern Luxury Rooms</li>
               <li className='cursor-pointer hover:border-b-2 w-fit'>Best Cozy Comfort Rooms</li>
               <li className='cursor-pointer hover:border-b-2 w-fit'>Deluxe Rooms</li>
@@ -22,15 +22,14 @@ const Foter = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">Features</h3>
-            <ul className="space-y-1 text-sm text-gray-300">
+            <ul className="space-y-1 text-sm ">
               <li className='cursor-pointer hover:border-b-2 w-fit'>Dining</li>
               <li className='cursor-pointer hover:border-b-2 w-fit'>Gallery</li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">More</h3>
-            <ul className="space-y-1 text-sm text-gray-300">
-              <li className='cursor-pointer hover:border-b-2 w-fit'>Blog</li>
+            <ul className="space-y-1 text-sm ">
               <li className='cursor-pointer hover:border-b-2 w-fit'>About</li>
               <li className='cursor-pointer hover:border-b-2 w-fit'>Contact</li>
             </ul>
@@ -41,7 +40,7 @@ const Foter = () => {
         <div className="space-y-6">
           <div>
             <h3 className="text-lg font-semibold mb-2">Subscribe to our newsletter</h3>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm ">
               Monthly digest of what's new and exciting from us.
             </p>
             <form className="mt-4">
@@ -54,7 +53,7 @@ const Foter = () => {
                 />
                 <button
                   type="submit"
-                  className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-md transition"
+                  className="bg-blue-600 text-white hover:bg-blue-700 px-5 py-2 rounded-md transition"
                 >
                   Subscribe
                 </button>
@@ -85,7 +84,7 @@ const Foter = () => {
 
         {/* Column 3 */}
         <div className="flex items-end">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm ">
             © 2025-26 <span className="text-white">Kanha Hotel</span> (D&M by{'suresh joshi'}
             <span className="text-blue-400">AHIT</span>). All Rights Reserved.
           </p>
