@@ -2,13 +2,13 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import MainLyout from './component/MainLyout'
 import { lazy, Suspense } from 'react'
-import About from './pages/About'
 const Home = lazy(()=>import('./pages/Home'))
 const DeluxRoom = lazy(()=>import('./pages/DeluxRoom'))
 const Default = lazy(()=>import('./pages/Default'))
 const Contact = lazy(()=>import('./pages/Contact'))
 const Gallery = lazy(()=>import('./pages/Gallery'))
 const MenuPage = lazy(()=>import('./pages/MenuPage'))
+const About = lazy(()=>import('./pages/About'))
 
 
 
