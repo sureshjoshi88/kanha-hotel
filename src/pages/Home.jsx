@@ -55,7 +55,7 @@ const Home = () => {
   return (
     <div>
       {/* MAIN SLIDER */}
-      <div className="relative w-full md:mt-30 sm:mt-20">
+      <div className="relative w-full md:mt-31 sm:mt-21">
         <div className="overflow-hidden rounded-2xl shadow-lg ">
           {images.map((img, index) => (
             <div
