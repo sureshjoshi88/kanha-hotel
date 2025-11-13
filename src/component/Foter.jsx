@@ -64,7 +64,7 @@ const Foter = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
-                <div className="flex gap-3 mt-2">
+                <div className="flex gap-3 mt-5">
                   <a href="#">
                     <img src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook" />
                   </a>
