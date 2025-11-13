@@ -11,7 +11,8 @@ const Foter = () => {
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Column 1 */}
             <div className="space-y-6">
-              <div>
+              <div className='flex gap-10'>
+                <div>
                 <h3 className="text-lg font-semibold mb-2">Rooms &amp; Suites</h3>
                 <ul className="space-y-1 text-sm ">
                   <li className='cursor-pointer hover:border-b-2 w-fit'>Modern Luxury Rooms</li>
@@ -26,6 +27,7 @@ const Foter = () => {
                   <li className='cursor-pointer hover:border-b-2 w-fit'>Dining</li>
                   <li className='cursor-pointer hover:border-b-2 w-fit'>Gallery</li>
                 </ul>
+              </div>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2">More</h3>
