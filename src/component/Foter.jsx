@@ -11,7 +11,7 @@ const Foter = () => {
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Column 1 */}
             <div className="space-y-6">
-              <div className='flex gap-10'>
+              <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-8'>
                 <div>
                 <h3 className="text-lg font-semibold mb-2">Rooms &amp; Suites</h3>
                 <ul className="space-y-1 text-sm ">
