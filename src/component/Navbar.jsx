@@ -141,7 +141,7 @@ const togleForm = ()=> setFrom(!form)
       </div>
 
       {/* Mobile Slide Menu */}
-      <div className={`fixed top-0 left-0 h-full w-64 bg-white z-50 shadow-md transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-md transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-y-full'}`}>
         <div className="flex justify-between items-center px-4 py-3 border-b">
           <img src={logo} alt="Logo" className="w-10 rounded" />
           <button onClick={toggleMobileMenu} className="text-xl text-gray-700">
@@ -167,7 +167,7 @@ const togleForm = ()=> setFrom(!form)
       {/* Overlay */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-40 z-40"
+          className="fixed inset-0 bg-opacity-40 z-40"
           onClick={toggleMobileMenu}
         />
       )}
