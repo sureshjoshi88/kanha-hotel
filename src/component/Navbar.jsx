@@ -173,7 +173,7 @@ const togleForm = ()=> setFrom(!form)
       )}
 
       
-     { form&& <div className="left-1/2 -translate-x-1/2 top-29 overflow-y-scroll md:h-130 mb-4   absolute w-100 md:w-160  bg-white p-6  shadow-md rounded-xl side-line">
+     { form&& <div className="left-1/2 -translate-x-1/2 top-32 overflow-y-scroll md:h-110 mb-4   absolute w-100 md:w-160  bg-white p-6  shadow-md rounded-xl side-line">
      <div className='text-end p-0'>
      <button  onClick={togleForm} className='rounded-full text-3xl cursor-pointer hover:bg-red-500 hover:text-white'><TiDelete />
 </button>
@@ -279,7 +279,7 @@ const togleForm = ()=> setFrom(!form)
       <div className="text-center">
         <button
           type="submit"
-          className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+          className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 w-full transition"
         >
           Book Now
         </button>
