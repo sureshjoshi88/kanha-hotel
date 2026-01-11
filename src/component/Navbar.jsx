@@ -41,7 +41,7 @@ const Navbar = () => {
   const onSubmit = (data) => {
     console.log("Booking Data:", data)
     alert("Booking Successful!")
-    reset() // Clear the form
+    reset() 
   }
 
 
